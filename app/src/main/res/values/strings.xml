@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CategoryItem</string>
+    <string name="add_category">Add category</string>
+    <string name="add_item">Add item</string>
+    <string name="saveitem">Save</string>
+    <string name="category">vegetarian</string>
+    <string name="name">Panner Tikka</string>
+</resources>

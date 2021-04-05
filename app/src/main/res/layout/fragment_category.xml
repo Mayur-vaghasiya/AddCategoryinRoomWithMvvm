@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="@dimen/height_width_10"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edittext_addcategory"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_width_42"
+        android:background="@drawable/login_edittext_square_boarder"
+        android:hint="@string/add_category"
+        android:padding="@dimen/padding_margin_5"
+        android:imeOptions="actionNext"
+        android:textSize="@dimen/text_14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_width_60"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/padding_margin_10"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edittext_additem"
+            android:layout_width="@dimen/height_width_108"
+            android:layout_height="@dimen/height_width_42"
+            android:layout_below="@+id/edittext_addcategory"
+            android:layout_weight="1"
+            android:background="@drawable/login_edittext_square_boarder"
+            android:hint="@string/add_item"
+            android:padding="@dimen/padding_margin_5"
+            android:imeOptions="actionDone"
+            android:textSize="@dimen/text_14" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn_add"
+            android:layout_width="@dimen/height_width_42"
+            android:layout_height="@dimen/height_width_42"
+            android:layout_marginLeft="@dimen/height_width_10"
+            android:background="@drawable/login_edittext_square_boarder"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="@color/divider_selectornew"
+            android:textSize="@dimen/text_25" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_width_210"
+        android:layout_marginTop="@dimen/height_width_10"
+        android:background="@drawable/square_border"
+        android:padding="@dimen/padding_margin_5" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btn_submit"
+        android:layout_width="@dimen/height_width_108"
+        android:layout_height="@dimen/height_width_40"
+        android:layout_margin="@dimen/height_width_20"
+        android:background="@drawable/login_edittext_square_boarder"
+        android:gravity="center"
+        android:text="@string/saveitem"
+        android:textColor="@color/dashusername"
+        android:textSize="@dimen/text_16" />
+
+</LinearLayout>
